@@ -1,6 +1,6 @@
 import Tkinter
 
-class Application(Frame):
+class Application(Tkinter.Frame):
     def say_hi(self):
         print "hi there, everyone!"
 
@@ -19,7 +19,7 @@ class Application(Frame):
         self.hi_there.pack({"side": "left"})
 
     def __init__(self, master=None):
-        Frame.__init__(self, master)
+        Tkinter.Frame.__init__(self, master)
         self.pack()
         self.createWidgets()
 
